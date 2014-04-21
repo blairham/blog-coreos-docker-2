@@ -10,4 +10,4 @@ ExecStop=/usr/bin/docker stop contrived-service-1
 ExecStopPost=/usr/bin/etcdctl rm /domains/contrived-service-1/%H:%i
 
 [X-Fleet]
-X-Conflicts=contrived-service-1.service
+X-Conflicts=contrived-service-*.service
